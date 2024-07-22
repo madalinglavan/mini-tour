@@ -161,24 +161,33 @@ document.querySelectorAll('.skill').forEach(skill => {
 
 
 //calendar 
+// Calendar schedule
 const schedule = {
     // Luni, Marti, Miercuri
-    1: { start: "08:30", end: "10:00" },
-    2: { start: "08:30", end: "10:00" },
-    3: { start: "08:30", end: "10:00" },
-    // Joi, Vineri
-    4: { start: "11:00", end: "12:30" },
-    5: { start: "11:00", end: "12:30" }
+    1: { start: "10:20", end: "12:00" }, // 3 hours before flight arrival on Thursday
+    2: { start: "10:20", end: "12:00" },
+    3: { start: "10:20", end: "12:00" },
+    // Joi
+    4: { start: "12:20", end: "14:00" },
+    // Vineri
+    5: { start: "02:50", end: "04:30" },
+    // Sambata, Duminica
+    6: { start: "10:20", end: "12:00" },
+    0: { start: "10:20", end: "12:00" }
 };
 
 const returnSchedule = {
     // Luni, Marti, Miercuri
-    1: { start: "11:00", end: "12:30" },
-    2: { start: "11:00", end: "12:30" },
-    3: { start: "11:00", end: "12:30" },
-    // Joi, Vineri
-    4: { start: "13:00", end: "14:30" },
-    5: { start: "13:00", end: "14:30" }
+    1: { start: "16:20", end: "18:00" }, // 1 hour after flight arrival on Thursday
+    2: { start: "16:20", end: "18:00" },
+    3: { start: "16:20", end: "18:00" },
+    // Joi
+    4: { start: "16:20", end: "18:00" },
+    // Vineri
+    5: { start: "08:40", end: "10:30" },
+    // Sambata, Duminica
+    6: { start: "16:20", end: "18:00" },
+    0: { start: "16:20", end: "18:00" }
 };
 
 function initializeMonths() {
