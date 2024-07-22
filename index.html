@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ro">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Transport taxi-maxi aeroport Copenhaga - Korsor, tur retour">
+        <meta name="keywords" content="Taxi-maxi aeroport Copenhaga, traseu Korsor Vemmelev Slagelse Soro Sjaelland Ringsted Koge Solrod Stand Karlslunde Ishoj">
+        <meta name="author" content="Minitour">
+        <meta name="robots" content="index, follow">
+        <meta property="og:url" content="https://www.mini-tour.net" />
+        <meta property="og:type" content="Taxi-maxi aeroport Copenhaga, traseu Korsor Vemmelev Slagelse Soro Sjaelland Ringsted Koge Solrod Stand Karlslunde Ishoj" />
+        <meta property="og:title" content="Transport" />
+        <meta property="og:description" content="Transfer la Aeroport Sigur si eficient, cea mai buna alegere" />
+        <meta property="og:image" content="" />
+        
+
+        <!-- CSS Stylesheet -->
+        <link rel="stylesheet" href="style.css">
+    
+        <!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/f26a888174.js" crossorigin="anonymous" defer></script>
+    
+        <!-- Custom Script -->
+        <script src="script.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Gwendolyn:wght@400;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    
+        <!-- SEO Optimized -->
+        <title>Minitour </title>
+        <meta property="og:title" content="Minitour">
+        <meta property="og:description" content="Transport taxi-maxi aeroport Copenhaga - Korsor, tur retour ">
+        <meta property="og:url" content="https://www.mini-tour.net">
+        <meta property="og:type" content="Transfer Aeroport Copenhaga - Korsor">
+        <link rel="canonical" href="https://www.mini-tour.net">
+    </head>
+    <header>
+        <nav>
+            <div class="wrap-nav-left">
+                <div class="nav-left">
+                    <a href="index.html"><img src="img/minitour logo alb.png" alt="Logo Firma Transport" class="logo"></a> 
+                    <a href="https://www.google.ro/maps/place/Aeroportul+Copenhaga/@55.5613169,12.6116862,11z/data=!4m14!1m7!3m6!1s0x4653ab102787956b:0xfc95bcff205ab30b!2sAeroportul+Copenhaga!8m2!3d55.609577!4d12.6355201!16zL20vMDFicDVj!3m5!1s0x4653ab102787956b:0xfc95bcff205ab30b!8m2!3d55.609577!4d12.6355201!16zL20vMDFicDVj?entry=ttu" target="_blank">
+                        <p>Transfer Rapid la Aeroport <br> <span><i class="fa-solid fa-location-dot"></i>&nbsp;Copenhaga Kastrup</span></p></a>
+                </div>
+                <div class="menu-toggle" id="menuToggle"><span>☰</span></div>
+            </div>
+            <div class="nav-center">
+                <ul>
+                    <li><a href="index.html">Acasa</a></li>
+                    <li><a href="#servicii">Servicii</a></li>
+                    <li><a href="#despre-noi">Despre Noi</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <ul>
+                    <li><a href="https://www.facebook.com/profile.php?id=61562038162527"onclick="toggleMenu() target="_blank" rel="noopener"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.tiktok.com/@minitourtransport" target="_blank"><i class="fa-brands fa-tiktok"></i></a></li>
+                </ul>
+            </div>
+            <div class="rezervari">
+                <h2>REZERVA ACUM</h2>
+                <div class="rezervari-container">
+                    <div class="rezerva-acum">
+                        <a href="tel:+4550225223">Telefon &nbsp;&nbsp;<i class="fa fa-phone"></i> </a>
+                    </div>
+                    <div class="rezerva-acum">
+                        <a href="https://wa.me/+4550225223">WhatsApp &nbsp;&nbsp;<i class="fa fa-whatsapp"></i> </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <body>
+        <div class="publicitate">
+            <p class="intro-logo"><img src="img/minitour logo alb.png" alt=""></p>
+            <p class="intro-text">TRANSFER <span>AEROPORT </span>COPENHAGA</p>
+            <video autoplay loop muted>
+                <source src="video/publicitate.mp4" type="video/mp4">
+            </video>
+            <div id="skills-container" class="skills-container"></div>
+        </div>
+        <section id="servicii" class="services">
+            <div class="map-container">
+                <div class="step programare" data-step="REZERVARE"></div>
+                <div class="step intalnire" data-step="INTALNIRE"></div>
+                <div class="step sosire" data-step="AEROPORT"></div>
+                <div class="step casa" data-step="DESTINATIE" style="display: none;"></div>
+                <div class="message" style="display: none;">
+                    <div class="rezerva-acum-pub">
+                    <a href="https://wa.me/+4550225223">REZERVA ACUM &nbsp;<i class="fa fa-whatsapp"></i> </a>
+                    </div>
+                </div>
+                <div class="route"></div>
+            </div>
+            <h3>RUTA FIXA (tour-retour)</h3>
+            <p> <i class="fa-solid fa-location-dot"></i>&nbsp;Aeroport Copenhaga - <i class="fa-solid fa-location-dot"></i>&nbsp;Korsor</p>
+            <div class="service">
+                    <div class="harta-ruta">
+                        <ul>
+                            <li><i class="fa-solid fa-location-dot"></i>&nbsp;<a href="https://www.google.com/maps/place/4220+Kors%C3%B8r,+Danemarca/@55.3399599,11.0079712,12z/data=!3m1!4b1!4m6!3m5!1s0x464d5d4ed8b3b3f3:0xa00afcc1d511ef0!8m2!3d55.325763!4d11.1493901!16zL20vMDNmM2p0?entry=ttu">Korsor</a></li>
+                            <li><i class="fa-solid fa-location-dot"></i>&nbsp;<a href="https://www.google.com/maps/place/Vemmelev,+4241+Vemmelev,+Danemarca/@55.3596002,11.2153811,13z/data=!3m1!4b1!4m6!3m5!1s0x464d673c923830b3:0xff1c2c412dc45507!8m2!3d55.3605795!4d11.2668158!16s%2Fg%2F11bw3g2qz3?entry=ttu">Vemmelev</a></li>
+                            <li><i class="fa-solid fa-location-dot"></i>&nbsp;<a href="https://www.google.com/maps/place/4200+Slagelse,+Danemarca/@55.3966088,11.3036355,13.25z/data=!4m6!3m5!1s0x464d6162e0d4cdb7:0xbf0409f313af0f00!8m2!3d55.403692!4d11.355257!16zL20vMDQ0am45?entry=ttu">Slagelse</a></li>
+                            <li><i class="fa-solid fa-location-dot"></i>&nbsp;<a href="https://www.google.com/maps/place/4180+Pedersborg,+Danemarca/@55.4549452,11.5498063,15z/data=!3m1!4b1!4m6!3m5!1s0x46529c945cfedd6d:0x76b15612e058bd4e!8m2!3d55.454934!4d11.560106!16s%2Fg%2F1jmcfthw_?entry=ttu">Pedesborg</a></li>
+                            <li><i class="fa-solid fa-location-dot"></i>&nbsp;<a href="https://www.google.com/maps/place/4100+Ringsted,+Danemarca/@55.4563659,11.7534811,12z/data=!4m6!3m5!1s0x4652920273830c2b:0xf7f3d35336cd393c!8m2!3d55.442952!4d11.791372!16zL20vMDFwcV95?entry=ttu">Ringsted</a></li>
+                            <li><i class="fa-solid fa-location-dot"></i>&nbsp;<a href="https://www.google.com/maps/place/4600+K%C3%B8ge,+Danemarca/@55.4468255,12.0806779,12z/data=!3m1!4b1!4m6!3m5!1s0x4652f0e356b4c9c7:0x471e9d52482e4214!8m2!3d55.457526!4d12.1821809!16s%2Fm%2F05253ph?entry=ttu">Koge</a></li>
+                            <li><i class="fa-solid fa-location-dot"></i>&nbsp;<a href="https://www.google.com/maps/place/2680+Solr%C3%B8d+Strand,+Danemarca/@55.5329924,12.1245394,13z/data=!3m1!4b1!4m6!3m5!1s0x4652f71d0b35f1df:0x7998b170fa008460!8m2!3d55.5347191!4d12.192989!16s%2Fm%2F09rx_2k?entry=ttu">Solrod Stand</a></li>
+                            <li><i class="fa-solid fa-location-dot"></i>&nbsp;<a href="https://www.google.com/maps/place/2690+Karlslunde,+Danemarca/@55.5657067,12.1849753,13z/data=!3m1!4b1!4m6!3m5!1s0x4652f649acf18fa9:0x12ac46c8dba6b5aa!8m2!3d55.566682!4d12.249315!16s%2Fg%2F1215vwdg?entry=ttu">Karlslunde</a></li>
+                            <li><i class="fa-solid fa-location-dot"></i>&nbsp;<a href="https://www.google.com/maps/place/2635+Ish%C3%B8j,+Danemarca/@55.6131417,12.2995227,13.75z/data=!4m6!3m5!1s0x465258243567cccb:0xc21555709d97b766!8m2!3d55.613972!4d12.34637!16zL20vMDEyaGdf?entry=ttu">Ishoj</a></li>
+                            <li><i class="fa-solid fa-location-dot"></i>&nbsp; <a href="https://www.google.com/maps/place/Aeroportul+Copenhaga/@55.60958,12.6329452,17z/data=!3m1!4b1!4m6!3m5!1s0x4653ab102787956b:0xfc95bcff205ab30b!8m2!3d55.609577!4d12.6355201!16zL20vMDFicDVj?entry=ttu">Aeroport Copenhaga</a></li>
+                        </ul>
+                        <div class="harta-container">
+                            <iframe
+                                width="100%"
+                                src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d579752.3079882512!2d12.392398448749703!3d55.47166308350154!2m3!1f245.87401026518127!2f60!3f0!3m2!1i1024!2i768!4f35!4m13!3e0!4m5!1s0x4653ab102787956b%3A0xfc95bcff205ab30b!2sAeroportul%20Copenhaga%20(CPH)%2C%20Lufthavnsboulevarden%2C%20Kastrup%2C%20Danemarca!3m2!1d55.609577!2d12.6355201!4m5!1s0x464d5d4ed8b3b3f3%3A0xa00afcc1d511ef0!2s4220%20Kors%C3%B8r%2C%20Danemarca!3m2!1d55.325763!2d11.1493901!5e1!3m2!1sro!2sro!4v1641935250582!5m2!1sro!2sro"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+                    <h4><i class="fa-solid fa-circle-info"></i> Pentru distanțe de până la 10 km, suntem flexibili în a devia de la ruta principală pentru a vă transporta direct la destinație.</h4> 
+                    <div class="calendar">
+                        <h2>Calendar Curse</h2>
+                        <div>
+                            <label for="month">Selectează luna:</label>
+                            <select id="month" onchange="updateDays()">
+                                <!-- Opțiunile pentru luni -->
+                                <option value="0">Ianuarie</option>
+                                <option value="1">Februarie</option>
+                                <option value="2">Martie</option>
+                                <option value="3">Aprilie</option>
+                                <option value="4">Mai</option>
+                                <option value="5">Iunie</option>
+                                <option value="6">Iulie</option>
+                                <option value="7">August</option>
+                                <option value="8">Septembrie</option>
+                                <option value="9">Octombrie</option>
+                                <option value="10">Noiembrie</option>
+                                <option value="11">Decembrie</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="day">Selectează ziua:</label>
+                            <select id="day">
+                                <!-- Opțiunile pentru zile vor fi actualizate din JavaScript -->
+                            </select>
+                        </div>
+                        <button onclick="showSchedule()">Afișează orarul</button>
+                        <table id="schedule-table" style="display:none;">
+                            <thead>
+                                <tr>
+                                    <th>Ruta</th>
+                                    <th>Plecare</th>
+                                    <th>Sosire</th>
+                                </tr>
+                            </thead>
+                            <tbody id="schedule-body">
+                                <!-- Conținutul tabelului va fi actualizat din JavaScript -->
+                            </tbody>
+                        </table>
+                    </div>  
+                    
+                <div class="intro-services">
+                    <p><i class="fa-regular fa-heart"></i> La Minitour, ne angajăm să oferim o experiență de călătorie superioară, prin intermediul următoarelor servicii: </p>
+                    <ul>
+                        <li><strong><i class="fa-solid fa-car"></i> Transport de încredere către și de la aeroport:</strong> Fie că aveți un zbor matinal sau unul nocturn, suntem disponibili să vă transportăm în siguranță și la timp, astfel încât să nu pierdeți niciun zbor.</li>
+                        <li><strong><i class="fa-solid fa-couch"></i> Confort de neegalat:</strong> Vehiculele noastre sunt echipate cu scaune confortabile și curate, asigurându-vă o călătorie relaxantă.</li>
+                        <li><strong><i class="fa-solid fa-wifi"></i> Internet Wi-Fi gratuit:</strong> Înțelegem importanța conectivității în ziua de azi, motiv pentru care oferim acces gratuit la internet Wi-Fi în toate vehiculele noastre, pentru ca dumneavoastră să rămâneți conectat pe tot parcursul călătoriei.</li>
+                        <li><strong><i class="fa-solid fa-shield"></i> Siguranță garantată:</strong> Cu o echipă de șoferi profesioniști și experimentați, vă garantăm o călătorie sigură și fără griji.</li>
+                    </ul>
+                </div>
+                <div class="rezervari">
+                        <h2>REZERVA ACUM</h2>
+                        <div class="rezervari-container">
+                            <div class="rezerva-acum">
+                                <a href="tel:+4550225223">Telefon &nbsp;&nbsp;<i class="fa fa-phone"></i> </a>
+                            </div>
+                            <div class="rezerva-acum">
+                                <a href="https://wa.me/+4550225223">WhatsApp &nbsp;&nbsp;<i class="fa fa-whatsapp"></i> </a>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="img/intalnire.png" alt="">
+                </div>
+        </section>
+        <div class="banner">
+            <img src="img/banner1 Minitour.png" alt="">
+        </div>
+        
+        <section id="despre-noi" class="despre-noi">
+            <img src="img/minitour logo alb.png" alt="Minitour Logo">
+            <div class="content">
+                <ul>
+                    <li>
+                        <h3><i class="fa-regular fa-bookmark"></i> Minitour este o firmă de transport persoane cu sediul în frumoasa capitală a Danemarcei, Copenhaga. Ne mândrim cu o tradiție solidă în domeniul transportului, oferind servicii de top pentru clienții noștri. Specializați în transportul persoanelor către și de la Aeroportul din Copenhaga, ne asigurăm că fiecare călătorie este caracterizată de eficiență, confort și punctualitate.</h3>
+                    </li>
+                    <li>
+                        <h4>Profesionalism și Punctualitate <i class="fa-solid fa-clock"></i></h4>
+                        <p>Angajații noștri sunt dedicați să vă ofere cele mai bune servicii de transport. Șoferii noștri nu sunt doar bine pregătiți și experimentați, dar și respectuoși și atenți la nevoile clienților. Înțelegem importanța timpului dumneavoastră și ne asigurăm că ajungeți la destinație la ora stabilită, fără întârzieri.</p>
+                    </li>
+                    <li>
+                        <h4>Misiunea Noastră <i class="fas fa-rocket"></i>
+                        </h4>
+                        <p>Misiunea Minitour este să ofere clienților noștri o experiență de transport excepțională, prin servicii de calitate superioară și dedicare față de satisfacția clientului. Ne străduim să devenim alegerea principală pentru transportul persoanelor în și dinspre Aeroportul din Copenhaga, prin menținerea unor standarde ridicate de calitate și profesionalism.</p>
+                    </li>
+                    <li>
+                        <h4>Contactați-ne <i class="fas fa-comments"></i>
+                        </h4>
+                        <p>Suntem aici pentru a răspunde tuturor întrebărilor și pentru a vă oferi informațiile necesare. Nu ezitați să ne contactați pentru a afla mai multe despre serviciile noastre sau pentru a face o rezervare.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section id="statistics">
+            <h2>Statistici</h2>
+            <div class="stat">
+                <div class="number" data-target="8500">0</div>
+                <p>Clienți Satisfăcuți <i class="fa-solid fa-face-smile"></i></p>
+            </div>
+            <div class="stat">
+                <div class="number" data-target="1200">0</div>
+                <p>Număr de Curse <i class="fa-solid fa-van-shuttle"></i></p>
+            </div>
+            <div class="stat">
+                <div class="number" data-target="150000">0</div>
+                <p>Kilometri Efectuați <i class="fa-solid fa-road"></i></p>
+            </div>
+            <div class="stat">
+                <div class="number" data-target="0">0</div>
+                <p>Accidente <i class="fa-solid fa-car-burst"></i></p>
+            </div>
+        </section>
+        
+        <section id="testimonials">
+            <h2>Recenzii</h2>
+            <div class="testimonial">
+                <p>"Serviciile oferite de firma de transport au fost excelente. Recomand cu căldură! <i class="fa-solid fa-heart"></i><i class="fa-solid fa-heart"></i><i class="fa-solid fa-heart"></i>"</p>
+                <p><strong>- Maria Popescu</strong></p>
+            </div>
+            <div class="testimonial">
+                <p>"O experiență foarte plăcută, șoferii sunt foarte profesioniști.<i class="fa-solid fa-user-tie"></i>"</p>
+                <p><strong>- Ion Ionescu</strong></p>
+            </div>
+            <div class="testimonial">
+                <p>"Călătoria a fost confortabilă și rapidă. Sunt foarte mulțumit de serviciile oferite.<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>"</p>
+                <p><strong>- Mădălin Glăvan</strong></p>
+            </div>
+            
+            <div class="testimonial">
+                <p>"Am avut o experiență extraordinară. Personalul este foarte amabil și prompt. <i class="fa-regular fa-handshake"></i>"</p>
+                <p><strong>- Ionuț Perca</strong></p>
+            </div>
+            
+            <div class="testimonial">
+                <p>"Firma de transport oferă servicii de calitate superioară. Voi apela din nou cu siguranță. <i class="fa-solid fa-hand-holding-heart"></i>"</p>
+                <p><strong>- Mirela Emilia</strong></p>
+            </div>
+        </section>
+        
+        
+    </body>
+
+    
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <h3>Contact</h3>
+                <ul>
+                    <li><a href="tel:+4550225223"> <i class="fa fa-phone"></i>&nbsp;&nbsp;Telefon </a></li>
+                    <li><a href="https://wa.me/+4550225223"><i class="fa fa-whatsapp"></i>WhatsApp</a></li>
+                    <li><i class="fa fa-envelope"></i><a href="mailto:minitourtransport@gmail.com">Email</a></li>
+                    <li><i class="fa fa-map-marker"></i> <a href="https://www.google.ro/maps/place/Copenhaga,+Danemarca/@55.6713366,12.5114242,12z/data=!3m1!4b1!4m6!3m5!1s0x4652533c5c803d23:0x4dd7edde69467b8!8m2!3d55.6760968!4d12.5683372!16zL20vMDFsZnk?entry=ttu" target="_blank">Copenhaga, Danemarca</a></li>
+                </ul>
+            </div>
+            <div class="footer-center">
+                <h3>Link-uri rapide</h3>
+                <ul>
+                    <li><a href="index.html">Acasa</a></li>
+                    <li><a href="#despre-noi">Despre Noi</a></li>
+                    <li><a href="#servicii">Servicii</a></li>
+                </ul>
+            </div>
+            <div class="footer-right">
+                <h3>Urmărește-ne</h3>
+                <ul class="social-links">
+                    <li><a href="https://www.facebook.com/profile.php?id=61562038162527" target="_blank"><i class="fa fa-facebook"></i>Facebook</a></li>
+                    <li><a href="https://www.tiktok.com/@minitourtransport" target="_blank"><i class="fa-brands fa-tiktok"></i>Tik-Tok</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 MiniTour. Toate drepturile rezervate.</p>
+        </div>
+    </footer>
+</html>
