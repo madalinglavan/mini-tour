@@ -242,7 +242,7 @@
         transition: opacity 0.8s ease, transform 0.8s ease;
         background-color: #00000071;
         margin: 0 auto; 
-        margin-top: 30px;
+        margin-top: 10px;
     }
     
     .services.visible,
@@ -256,7 +256,7 @@
         margin-left: 50%;
         transform: translate(-50%);
         height: 100px;
-        margin-top: 75px;
+        margin-top: 85px;
         margin-bottom: 20px;
     }
     .step {
@@ -551,9 +551,9 @@
     .intro-services li::before {
         content: '✔';
         color: #28a745;
-        margin-right: 10px;
+        margin-right: 5px;
         position: absolute;
-        left: -25px;
+        right: 0px;
         padding: 3px;
         top: 50%;
         transform: translateY(-50%);
@@ -727,7 +727,7 @@
         display: block;
         margin-top: 10px;
         font-size: 1.1em;
-        color: #333;
+        text-align: end;
     }
     
 
@@ -1138,7 +1138,9 @@
     .stat p {
         font-size: 1em;
     }
-    
+    #testimonials{
+        width: 100%;
+    }
 
 
 
