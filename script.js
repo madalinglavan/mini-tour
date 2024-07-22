@@ -329,28 +329,3 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
-//test width
-
-(function() {
-    function preventOverflow() {
-        if (window.innerWidth < 768) {
-            const elements = document.querySelectorAll('*:not(.map-container):not(.map-container *):not(.rezervari-container):not(.rezervari-container *):not(.fa)');
-            elements.forEach(el => {
-                el.style.overflowX = 'hidden';
-                el.style.maxWidth = '100vw';
-            });
-        } else {
-            const elements = document.querySelectorAll('*');
-            elements.forEach(el => {
-                el.style.overflowX = '';
-                el.style.maxWidth = '';
-            });
-        }
-    }
-
-    // Run the function on page load and resize
-    window.addEventListener('load', preventOverflow);
-    window.addEventListener('resize', preventOverflow);
-})();
-
-
