@@ -1,43 +1,47 @@
 <!DOCTYPE html>
 <html lang="ro">
     <head>
+        <!-- Charset -->
         <meta charset="UTF-8">
+        
+        <!-- Viewport Settings -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Transport taxi-maxi aeroport Copenhaga - Korsor, tur retour">
-        <meta name="keywords" content="Taxi-maxi aeroport Copenhaga, traseu Korsor Vemmelev Slagelse Soro Sjaelland Ringsted Koge Solrod Stand Karlslunde Ishoj">
+        
+        <!-- SEO Meta Tags -->
+        <meta name="description" content="Oferim servicii de transport taxi-maxi între Aeroportul Copenhaga și orașele din regiunea Korsor, inclusiv Vemmelev, Slagelse, Soro și altele. Rezerva acum pentru un transfer sigur și confortabil.">
+        <meta name="keywords" content="transport aeroport Copenhaga, taxi-maxi aeroport Copenhaga, transfer Copenhaga Korsor, taxi Vemmelev, transfer Slagelse, transport Soro, taxi Sjaelland, transfer Ringsted, taxi Koge, transport Solrod Strand, taxi Karlslunde, transfer Ishoj">
         <meta name="author" content="Minitour">
         <meta name="robots" content="index, follow">
-        <meta property="og:url" content="https://www.mini-tour.net" />
-        <meta property="og:type" content="Taxi-maxi aeroport Copenhaga, traseu Korsor Vemmelev Slagelse Soro Sjaelland Ringsted Koge Solrod Stand Karlslunde Ishoj" />
-        <meta property="og:title" content="Transport" />
-        <meta property="og:description" content="Transfer la Aeroport Sigur si eficient, cea mai buna alegere" />
-        <meta property="og:image" content="" />
+        <link rel="canonical" href="https://www.mini-tour.net">
         
-
+        <!-- Open Graph Meta Tags -->
+        <meta property="og:url" content="https://www.mini-tour.net">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Minitour">
+        <meta property="og:description" content="Oferim servicii de transport taxi-maxi între Aeroportul Copenhaga și orașele din regiunea Korsor, inclusiv Vemmelev, Slagelse, Soro și altele. Rezerva acum pentru un transfer sigur și confortabil.">
+        <meta property="og:image" content="https://www.mini-tour.net/img/image.jpg">
+    
+        <!-- Title -->
+        <title>Minitour - Transport Taxi-Max Aeroport Copenhaga</title>
+        
         <!-- CSS Stylesheet -->
         <link rel="stylesheet" href="style.css">
-    
+        
         <!-- Font Awesome -->
         <script src="https://kit.fontawesome.com/f26a888174.js" crossorigin="anonymous" defer></script>
-    
+        
         <!-- Custom Script -->
         <script src="script.js" defer></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js" defer></script>
+        
         <!-- Google Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Gwendolyn:wght@400;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-    
-        <!-- SEO Optimized -->
-        <title>Minitour </title>
-        <meta property="og:title" content="Minitour">
-        <meta property="og:description" content="Transport taxi-maxi aeroport Copenhaga - Korsor, tur retour ">
-        <meta property="og:url" content="https://www.mini-tour.net">
-        <meta property="og:type" content="Transfer Aeroport Copenhaga - Korsor">
-        <link rel="canonical" href="https://www.mini-tour.net">
     </head>
+    
     <header>
         <nav>
             <div class="wrap-nav-left">
@@ -130,19 +134,7 @@
                         <div>
                             <label for="month">Selectează luna:</label>
                             <select id="month" onchange="updateDays()">
-                                <!-- Opțiunile pentru luni -->
-                                <option value="0">Ianuarie</option>
-                                <option value="1">Februarie</option>
-                                <option value="2">Martie</option>
-                                <option value="3">Aprilie</option>
-                                <option value="4">Mai</option>
-                                <option value="5">Iunie</option>
-                                <option value="6">Iulie</option>
-                                <option value="7">August</option>
-                                <option value="8">Septembrie</option>
-                                <option value="9">Octombrie</option>
-                                <option value="10">Noiembrie</option>
-                                <option value="11">Decembrie</option>
+                                <!-- Opțiunile pentru luni vor fi actualizate din JavaScript -->
                             </select>
                         </div>
                         <div>
@@ -162,7 +154,8 @@
                             </thead>
                             <tbody id="schedule-body"></tbody>
                         </table>
-                    </div>  
+                    </div>
+                    
                     
                 <div class="intro-services">
                     <p><i class="fa-regular fa-heart"></i> La Minitour, ne angajăm să oferim o experiență de călătorie superioară, prin intermediul următoarelor servicii: </p>

@@ -157,37 +157,39 @@ document.querySelectorAll('.skill').forEach(skill => {
 
 
 
-
-
-
-//calendar 
 // Calendar schedule
 const schedule = {
-    // Luni, Marti, Miercuri
-    1: { start: "10:20", end: "12:00" }, // 3 hours before flight arrival on Thursday
-    2: { start: "10:20", end: "12:00" },
-    3: { start: "10:20", end: "12:00" },
+    // Luni
+    1: { start: "05:30", end: "06:40" },
+    // Marti
+    2: { start: "13:50", end: "15:00" },
+    // Miercuri
+    3: { start: "13:00", end: "14:10" },
     // Joi
-    4: { start: "12:20", end: "14:00" },
+    4: { start: "13:00", end: "14:10" },
     // Vineri
-    5: { start: "02:50", end: "04:30" },
-    // Sambata, Duminica
-    6: { start: "10:20", end: "12:00" },
-    0: { start: "10:20", end: "12:00" }
+    5: { start: "05:20", end: "06:30" },
+    // Sambata
+    6: { start: "13:00", end: "14:10" },
+    // Duminica
+    0: { start: "05:35", end: "06:45" }
 };
 
 const returnSchedule = {
-    // Luni, Marti, Miercuri
-    1: { start: "16:20", end: "18:00" }, // 1 hour after flight arrival on Thursday
-    2: { start: "16:20", end: "18:00" },
-    3: { start: "16:20", end: "18:00" },
+    // Luni
+    1: { start: "08:30", end: "09:40" },
+    // Marti
+    2: { start: "16:30", end: "17:40" },
+    // Miercuri
+    3: { start: "14:40", end: "15:50" },
     // Joi
-    4: { start: "16:20", end: "18:00" },
+    4: { start: "14:40", end: "15:50" },
     // Vineri
-    5: { start: "08:40", end: "10:30" },
-    // Sambata, Duminica
-    6: { start: "16:20", end: "18:00" },
-    0: { start: "16:20", end: "18:00" }
+    5: { start: "08:10", end: "09:20" },
+    // Sambata
+    6: { start: "14:40", end: "15:50" },
+    // Duminica
+    0: { start: "08:30", end: "09:40" }
 };
 
 function initializeMonths() {
@@ -218,8 +220,12 @@ function updateDays() {
 
     const startDay = (month === currentMonth) ? currentDate : 1;
 
+    const dayNames = ["Duminica", "Luni", "Marti", "Miercuri", "Joi", "Vineri", "Sambata"];
+
     for (let i = startDay; i <= daysInMonth; i++) {
-        daySelect.innerHTML += `<option value="${i}">${i}</option>`;
+        const date = new Date(2024, month, i);
+        const dayName = dayNames[date.getDay()];
+        daySelect.innerHTML += `<option value="${i}">${dayName} ${i}</option>`;
     }
 }
 
