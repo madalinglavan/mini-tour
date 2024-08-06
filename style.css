@@ -427,6 +427,10 @@
         color: inherit; 
         text-decoration: none; 
     }
+    .harta-ruta ul li span{
+        font-size: .6rem;
+        font-style: italic;
+    }
     .harta-container {
         position: relative;
         min-width: 50%;
