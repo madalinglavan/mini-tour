@@ -203,6 +203,11 @@ const extraSchedule = {
     5: { start: "06:40", end: "07:50" }  // Vineri suplimentar
 };
 
+const extraReturnSchedule = {
+    1: { start: "09:40", end: "10:50" }, // Luni suplimentar
+    5: { start: "09:40", end: "10:50" }  // Vineri suplimentar
+};
+
 // Inițializează opțiunile de luni în dropdown-ul lunii
 function initializeMonths() {
     const today = new Date();
@@ -277,6 +282,11 @@ function showSchedule() {
                     <td>${extraSchedule[dayOfWeek].start}</td>
                     <td>${extraSchedule[dayOfWeek].end}</td>
                 </tr>
+                <tr>
+                    <td>Aeroport Copenhaga -> Korsor</td>
+                    <td>${extraReturnSchedule[dayOfWeek].start}</td>
+                    <td>${extraReturnSchedule[dayOfWeek].end}</td>
+                </tr>
             `;
         }
     } else {
@@ -313,7 +323,6 @@ document.getElementById('month').addEventListener('change', function() {
 // Initializează opțiunile de lună și zi pe baza datei curente
 initializeMonths();
 updateDays();
-
 
 
 //despre noi
