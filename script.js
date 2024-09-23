@@ -65,11 +65,7 @@ document.addEventListener("DOMContentLoaded", () => {
         steps[3].style.display = 'block';
     } }, "-=4.0");
 
-    // Animația pentru mesajul informativ
-    timeline.to(message, { duration: 0.1, opacity: 1, onStart: () => message.style.display = 'block' }, "-=3.8");
-    timeline.to(message, { duration: 2, opacity: 1 });
-    timeline.to(message, { duration: 0.5, opacity: 0, onComplete: () => message.style.display = 'none' });
-
+    
     // Animația pentru punctul de pas "Casă"
     timeline.to(steps[3], { duration: -1, opacity: 1, onStart: () => steps[3].classList.add("show") }, "-=3.5");
 
