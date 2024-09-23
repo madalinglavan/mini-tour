@@ -92,8 +92,8 @@ document.addEventListener("DOMContentLoaded", () => {
 //skills
 const skills = [
     { name: 'SERIOZITATE', level: '100%' },
-    { name: 'COMFORT', level: '100%' },
-    { name: 'EFICIENTA', level: '100%' },
+    { name: 'CONFORT', level: '100%' },
+    { name: 'EFICIENȚĂ', level: '100%' },
 ];
 
 const skillsContainer = document.getElementById('skills-container');

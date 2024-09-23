@@ -227,7 +227,16 @@
     }
 
 
-
+    #servicii a{
+        color: #fff;
+        text-decoration: none;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    #servicii a p {
+        margin-top: 30px;
+        color: #fff;
+    }
 
     .services,
     .despre-noi {
@@ -238,7 +247,7 @@
         opacity: 0;
         transform: translateY(50px);
         transition: opacity 0.8s ease, transform 0.8s ease;
-        background-color: #00000071;
+        background-color: #0000003d;
         margin: 0 auto; 
         margin-top: 10px;
     }
@@ -254,7 +263,6 @@
         margin-left: 50%;
         transform: translate(-50%);
         height: 100px;
-        margin-top: 85px;
         margin-bottom: 20px;
     }
     .step {
@@ -406,13 +414,12 @@
         justify-content: space-between;
         align-items: center;
         text-align: center;
-        border: 2px solid rgb(255, 255, 255);
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.24);
     }
     .harta-ruta ul {
-        text-align: start;
+        
+        text-align:start;
         border-radius: 24px;
-        padding: 3px;
     }
     .harta-ruta ul li {
         color: #fff;
@@ -420,15 +427,13 @@
         text-transform: uppercase;
         list-style: none; 
         padding: 3px;
+        margin-left: 70px;
     }
     .harta-ruta ul li a {
         color: inherit; 
         text-decoration: none; 
     }
-    .harta-ruta ul li span{
-        font-size: .6rem;
-        font-style: italic;
-    }
+   
     .harta-container {
         position: relative;
         min-width: 50%;
@@ -572,8 +577,7 @@
         align-items: center;
     }
     .rezervari h2{
-        font-size: 1rem;
-        border: 2px solid rgb(255, 255, 255);
+        font-size: 1.5rem;
         padding: 4px;
         border-radius: 12px;
     }
@@ -589,7 +593,7 @@
         position:relative;
         border-radius: 16px;
         transition: transform 0.3s ease-in-out;
-        padding: 3px;
+        padding: 5px;
         margin: 3px;
         text-shadow: 1px 1px 2px rgb(0, 0, 0);
     }
@@ -653,6 +657,7 @@
     
     .despre-noi h3, .despre-noi h4, .despre-noi p {
         margin: 0 0 10px 0;
+        
     }
     
     .despre-noi h3 {
@@ -672,6 +677,7 @@
         color: #ffffff;
         line-height: 1.6;
         text-shadow: 2px 2px 2px rgb(145, 145, 145);
+        text-align: center;
     }
     
     #statistics {
@@ -733,7 +739,54 @@
         font-size: 1.1em;
         text-align: end;
     }
+    /* Footer fixat */
+
+.fixed-footer {
+    position: fixed;
+    bottom:5px;
+    width: 100%;
+    padding: var(--spacing-small) 0;
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    color: var(--secondary-color);
+    z-index: 1000;
+}
+
+.fixed-footer a {
+    text-decoration: none;
+    padding: var(--spacing-small) var(--spacing-medium);
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: background-color 0.3s ease;
+    padding: 5px 7px 3px;
+    text-transform: uppercase;
+}
+
+.call-button {
+    background-color: #00aaff;
+    color: var(--secondary-color);
+}
+
+.call-button:hover {
+    background-color: #2e4bcf;
     
+}
+
+.fixed-footer a i {
+    font-size: 18px;
+}
+
+.whatsapp-button {
+    background-color: #25D366;
+    color: var(--secondary-color);
+}
+
+.whatsapp-button:hover {
+    background-color: #128C7E;
+}
 
 
     footer {
@@ -1120,6 +1173,14 @@
     .despre-noi h4{
         font-size: 1rem;
         text-align: center;
+        
+    }
+    .despre-noi h3{
+        text-align: auto;
+        color: #fcfbb5;
+        font-size: 1.1rem;
+        text-align: start;
+        margin-left: 10px;
     }
 
     #statistics {
